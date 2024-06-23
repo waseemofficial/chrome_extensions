@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:black; /*#434d56*/
+    color:#fff;
+    display:flex;
+    font-family: "Mul",sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+p{
+    margin: 5px  0;
+}
+
+h2{
+    margin: 10px 0 20px;
+    text-align: center;
+    color:blue;
+}
+input[type='checkbox']{
+    margin-right: 0;
+}
+.container{
+    background-color:#434d56;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding:6px 5px;
+    height: 400px;
+    width: 100%;   
+}
+.result-container{
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding:12px 10px;
+    height: 40px;
+    width: 100%;
+}
+.result-container #result{
+    word-wrap: break-word;
+    max-width: calc(100%-40px);
+    height:100%
+}
+.result-container .btn{
+    font-size:20px;
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    height: 30px;
+    width: 10%;
+}
+.btn{
+    bottom: none;
+    width: 100%;
+}
+.btn-large{
+    display: block;
+    width: 100%;
+}
+.red {
+    background: red;
+    background-color: red;
+}
+.setting{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+@media screen and (max-width:400px) {
+    .result-container{
+        font-size: 14px;
+    }
+    
+}
+
+label{
+    color:white
+}
