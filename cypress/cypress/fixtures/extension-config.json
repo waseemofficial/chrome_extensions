@@ -1,0 +1,8 @@
+{
+  "extensionPath": "./extensions/password-generator",
+  "popupUrl": "chrome-extension://${extensionId}/main.html",
+  "testCredentials": {
+    "website": "https://the-internet.herokuapp.com/login",
+    "username": "test@example.com"
+  }
+}

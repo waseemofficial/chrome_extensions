@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:extension": "cypress open --config-file cypress.config.js",
+    "cy:extension:headless": "cypress run --config-file cypress.config.js",
+    "test:extension": "npm run cy:extension"
   },
   "keywords": [],
   "author": "",
