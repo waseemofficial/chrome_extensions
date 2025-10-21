@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>Password Generator</title>
+    <meta charset="UTF-8"/>
+</head>
+<body id="main">
+    <div class="container">
+        <h2>Password Generator</h2>
+        
+        <div class="result-container">
+            <span id="result">Click Generate</span>
+            <button class="btn" id="clipboard" title="Copy to clipboard">
+                <i class="fa fa-clipboard"></i>
+            </button>
+        </div>
+        
+        <div class="strength-indicator">
+            <div class="strength-bar" id="strength-bar"></div>
+        </div>
+        
+        <div class="settings">
+            <div class="setting">
+                <label for="length">Password Length</label>
+                <input id="length" type="number" min="8" max="32" value="16">
+            </div>
+            
+            <div class="setting">
+                <label for="uppercase">Include Uppercase Letters</label>
+                <input id="uppercase" type="checkbox" checked>
+            </div>
+            
+            <div class="setting">
+                <label for="lowercase">Include Lowercase Letters</label>
+                <input id="lowercase" type="checkbox" checked>
+            </div>
+            
+            <div class="setting">
+                <label for="number">Include Numbers</label>
+                <input id="number" type="checkbox" checked>
+            </div>
+            
+            <div class="setting">
+                <label for="symbols">Include Symbols</label>
+                <input id="symbols" type="checkbox" checked>
+            </div>
+            
+            <div class="setting">
+                <label for="excludeSimilar">Exclude Similar Characters (i,l,1,L,0,O)</label>
+                <input id="excludeSimilar" type="checkbox">
+            </div>
+        </div>
+
+        <button class="btn btn-large" id="generate">
+            <i class="fa fa-refresh"></i> Generate Password
+        </button>
+        
+        <!-- Auto-fill button will be added dynamically -->
+        
+        <button class="btn btn-large red" id="save">
+            <i class="fa fa-save"></i> Save to History
+        </button>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
